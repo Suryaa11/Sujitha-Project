@@ -1,0 +1,5 @@
+apiVersion: v2
+name: sujitha-project
+description: Helm Chart
+version: 1.0.0
+appVersion: "latest"
