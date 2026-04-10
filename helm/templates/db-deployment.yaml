@@ -33,7 +33,7 @@ spec:
           volumeMounts:
             - name: vct
               mountPath: /data/db
-  volumeClaimTemplate:
+  volumeClaimTemplates:
     - metadata:
         name: vct
       spec:
