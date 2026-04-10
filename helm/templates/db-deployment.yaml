@@ -30,6 +30,18 @@ spec:
             limits:
               cpu: "200m"
               memory: "512Mi"
+          volumeMounts:
+            - name: vct
+              mountPath: /data/db
+  volumeClaimTemplate:
+    - metadata:
+        name: vct
+      spec:
+        accessMode: ["ReadWriteMany"]
+        storageClassName: storage
+        resources:
+          requests:
+            storage: 5Gi 
 ---
 apiVersion: v1
 kind: Service
