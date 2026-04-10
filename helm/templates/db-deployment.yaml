@@ -32,7 +32,7 @@ spec:
     - metadata:
         name: vct
       spec:
-        accessMode: ["ReadWriteMany"]
+        accessModes: ["ReadWriteMany"]
         storageClassName: storage
         resources:
           requests:
