@@ -34,13 +34,13 @@ spec:
             - name: MONGO_URI
               valueFrom:
                 secretKeyRef:
-                  - name: sujitha-secret
-                    key: MONGO_URI
+                  name: sujitha-secret
+                  key: MONGO_URI
             - name: PORT  
               valueFrom:
                 configMapKeyRef:
-                  - name: sujitha-config
-                    key: PORT
+                  name: sujitha-config
+                  key: PORT
 ---
 apiVersion: v1
 kind: Service

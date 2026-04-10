@@ -16,7 +16,7 @@ spec:
           urlRewrite:
             path:
               type: ReplacePrefixMatch
-              value: /
+              replacePrefixMatch: /
       backendRefs:
         - name: sujitha-svc
           port: 3001
